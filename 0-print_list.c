@@ -10,18 +10,17 @@
 size_t print_list(const list_t *h)
 {
 	size_t number_of_nodes = 0;
-	list_t *current = h;
 
-	while (current != NULL)
+	while (h)
 	{
-		if (str != NULL)
+		if (h->str != NULL)
 		{
 			print("[%d] %s", current -> len, current -> str);
 		}
 		else
 			print("[0] (nil)");
 		number_of_nodes++;
-		current = current -> next;
+		h = h -> next;
 	}
 	return (number_of_nodes);
 }

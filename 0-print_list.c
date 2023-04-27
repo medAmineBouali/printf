@@ -15,7 +15,7 @@ size_t print_list(const list_t *h)
 	{
 		if (h->str != NULL)
 		{
-			print("[%d] %s", current -> len, current -> str);
+			print("[%d] %s", h->len, h->str);
 		}
 		else
 			print("[0] (nil)");
